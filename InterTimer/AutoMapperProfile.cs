@@ -13,6 +13,7 @@ namespace InterTimer.API
         {
             CreateMap<Domain.Request.ClientRequest, Data.Entities.Client>();
             CreateMap<Domain.Request.ClientUpdateRequest, Data.Entities.Client>();
+            CreateMap<Domain.Request.ProjectRequest, Data.Entities.Project>();
         }
     }
 }

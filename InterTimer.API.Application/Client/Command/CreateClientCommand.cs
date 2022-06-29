@@ -6,17 +6,17 @@ using MediatR;
 
 namespace InterTimer.API.Application.Client.Command
 {
-    public class CreateClientCommand : IRequest<int>
+    public class CreateProjectCommand : IRequest<int>
     {
         public ClientRequest NewClient { get; private set; }
 
-        public CreateClientCommand(ClientRequest clientRequest)
+        public CreateProjectCommand(ClientRequest clientRequest)
         {
             NewClient = clientRequest;
         }
     }
 
-    public class CreateClientCommandHandler: IRequestHandler<CreateClientCommand, int>
+    public class CreateClientCommandHandler: IRequestHandler<CreateProjectCommand, int>
     {
         private readonly IClientRepository _clientRepository;
         private readonly IMapper _mapper;
@@ -27,7 +27,7 @@ namespace InterTimer.API.Application.Client.Command
             _mapper = mapper;
         }
 
-        public Task<int> Handle(CreateClientCommand request, CancellationToken cancellationToken)
+        public Task<int> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
         {
             if (request?.NewClient == null || string.IsNullOrWhiteSpace(request.NewClient.Name))
             {

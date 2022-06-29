@@ -16,4 +16,8 @@
     <ProjectReference Include="..\InterTimer.API.Domain\InterTimer.API.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Timer\Query\" />
+  </ItemGroup>
+
 </Project>

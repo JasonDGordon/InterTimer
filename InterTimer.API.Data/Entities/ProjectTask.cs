@@ -11,5 +11,9 @@ namespace InterTimer.API.Data.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public int ProjectId { get; set; }
+        [ForeignKey("ProjectId")]
+        public Project Project { get; set; }
     }
 }

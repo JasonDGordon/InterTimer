@@ -21,8 +21,8 @@ namespace InterTimer.API.Data.Entities
         public int ProjectTaskId { get; set; }
 
         [Column(TypeName = "bigint")]
-        public TimeSpan TimeTaken { get; set; }
+        public TimeSpan? TimeTaken { get; set; }
         public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public DateTime? EndTime { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace InterTimer.API.Controllers
 {
-    public class TimerController : Controller
+    public class TimerController : BaseController
     {
         
     }

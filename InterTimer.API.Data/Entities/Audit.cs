@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace InterTimer.API.Data.Entities
 {
-    internal class Audit
+    public class Audit
     {
+        protected string CreatedBy { get; set; }
+        protected string UpdatedBy { get; set; }
         protected DateTime CreatedAt { get; set; }
         protected DateTime LastUpdatedAt { get; set; }
     }

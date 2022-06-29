@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj": {}
+    "D:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj": {}
   },
   "projects": {
-    "C:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj": {
+    "D:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj",
+        "projectUniqueName": "D:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj",
         "projectName": "InterTimer.API.Data",
-        "projectPath": "C:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj",
+        "projectPath": "D:\\src\\InterTimer\\InterTimer.API.Data\\InterTimer.API.Data.csproj",
         "packagesPath": "C:\\Users\\JasonDG\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\InterTimer\\InterTimer.API.Data\\obj\\",
+        "outputPath": "D:\\src\\InterTimer\\InterTimer.API.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JasonDG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,20 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InterTimer.API.Application
-build_property.ProjectDir = C:\src\InterTimer\InterTimer.API.Application\
+build_property.ProjectDir = D:\src\InterTimer\InterTimer.API.Application\

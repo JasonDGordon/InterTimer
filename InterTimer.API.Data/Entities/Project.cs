@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace InterTimer.API.Data.Entities
 {
-    internal class Project : Audit
+    public class Project : Audit
     {
-        internal int Id { get; set; }
-        internal string Name { get; set; }
-        internal int ClientId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int ClientId { get; set; }
 
-        [ForeignKey(Id = "ClientId")]
-        internal Client? Client { get; set; }
-
-        internal virtual ICollection<ProjectTask>? Tasks { get; set; }
+        [ForeignKey("ClientId")]
+        public Client? Client { get; set; }
 
     }
 }
